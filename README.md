@@ -6,8 +6,14 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| [manus-context-engineering.md](manus-context-engineering.md) | Manus 官方博客《AI 代理的上下文工程：构建 Manus 的经验教训》全文，按「问题 / 答案 / 原因 / 例子 / 结论」结构重新整理，含 7 张官方配图 |
+| [**Manus 架构实践总结.md**](docs/Manus%20架构实践总结.md) | ⭐ 总结：现状架构、十条与常规做法相反的取舍、迭代时间线、安全代价、可信度分级 |
+| [Manus Agent 架构 · 完整参考资料清单.md](docs/Manus%20Agent%20架构%20·%20完整参考资料清单.md) | 82 条链接，按 **A**（可当事实）/ **B**（可信非官方）/ **C**（第三方观点）/ **D**（避开）分级；末尾有「拿不到的」和「先读这五份」 |
+| [Context Engineering for AI Agents with LangChain and Manus（中英文对照）.md](docs/Context%20Engineering%20for%20AI%20Agents%20with%20LangChain%20and%20Manus（中英文对照）.md) | LangChain × Manus webinar 录音转写（约 1 小时，主讲季逸超），中英对照 |
+| [manus-context-engineering.md](docs/manus-context-engineering.md) | Manus 官方博客《AI 代理的上下文工程：构建 Manus 的经验教训》全文，按「问题 / 答案 / 原因 / 例子 / 结论」结构重新整理，含 7 张官方配图 |
+| [_extract-webinar.md](docs/_extract-webinar.md) | 转写的结构化提取（带 `行 NNN` 锚点），总结的取证底稿 |
 | [images/](images/) | 原文配图，取自 Manus 官方 CDN |
+
+> 总结里几条**和网上主流说法相反**的发现：官方已弃用自己那篇博客里的 `todo.md` 范式；明确不按角色划分多智能体；试过完全 CodeAct 后放弃；不用开源模型的理由是成本而非质量；最大的一次提升来自删代码而不是加架构。
 
 ## 出处与版权
 
@@ -31,7 +37,12 @@
 ```
 .
 ├── README.md
-├── manus-context-engineering.md
+├── docs/
+│   ├── Manus 架构实践总结.md                                        # 总结
+│   ├── Manus Agent 架构 · 完整参考资料清单.md                        # 82 条链接 + 分级
+│   ├── Context Engineering for AI Agents with LangChain and Manus（中英文对照）.md
+│   ├── manus-context-engineering.md                                # 官博全文整理
+│   └── _extract-webinar.md                                         # 转写结构化提取
 └── images/
     ├── 00-cover.webp
     ├── 01-kv-cache.png
