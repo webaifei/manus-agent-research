@@ -6,7 +6,8 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| [**Manus 架构实践总结.md**](docs/Manus%20架构实践总结.md) | ⭐ 总结：现状架构、十条与常规做法相反的取舍、迭代时间线、安全代价、可信度分级 |
+| [**Manus 架构实践总结.md**](docs/Manus%20架构实践总结.md) | ⭐ 总结：现状架构、十二条与常规做法相反的取舍、迭代时间线、安全代价、可信度分级 |
+| [补充材料笔记.md](docs/补充材料笔记.md) | 第二批四篇的阅读笔记（极客公园对谈 / E2B / **AWS 新闻稿** / philschmid），含**交叉印证与冲突表** |
 | [Manus Agent 架构 · 完整参考资料清单.md](docs/Manus%20Agent%20架构%20·%20完整参考资料清单.md) | 82 条链接，按 **A**（可当事实）/ **B**（可信非官方）/ **C**（第三方观点）/ **D**（避开）分级；末尾有「拿不到的」和「先读这五份」 |
 | [Context Engineering for AI Agents with LangChain and Manus（中英文对照）.md](docs/Context%20Engineering%20for%20AI%20Agents%20with%20LangChain%20and%20Manus（中英文对照）.md) | LangChain × Manus webinar 录音转写（约 1 小时，主讲季逸超），中英对照 |
 | [manus-context-engineering.md](docs/manus-context-engineering.md) | Manus 官方博客《AI 代理的上下文工程：构建 Manus 的经验教训》全文，按「问题 / 答案 / 原因 / 例子 / 结论」结构重新整理，含 7 张官方配图 |
