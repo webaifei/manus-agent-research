@@ -41,3 +41,16 @@
     ├── 05-errors.png
     └── 06-few-shot.png
 ```
+
+## 同系列
+
+本仓库是「一个仓库钻一个系统」系列里的一篇。横向对照（三家放在一起看）在
+[multi-agent-architecture-notes](https://github.com/webaifei/multi-agent-architecture-notes)。
+
+| 仓库 | 在线读 | 讲什么 |
+| --- | --- | --- |
+| dsh-agent-loop-notes | [在线](https://webaifei.github.io/dsh-agent-loop-notes/) · [源码](https://github.com/webaifei/dsh-agent-loop-notes) | DeepSeek Harness 的三层 `while`、两条队列、重试为什么不算新步骤 |
+| codex-agent-loop-notes | [在线](https://webaifei.github.io/codex-agent-loop-notes/) · [源码](https://github.com/webaifei/codex-agent-loop-notes) | Codex 的三层 `loop`，加一个叫 `needs_follow_up` 的布尔 |
+| muse-architecture-notes | [在线](https://webaifei.github.io/muse-architecture-notes/) · [源码](https://github.com/webaifei/muse-architecture-notes) | Meta Muse 的权限模型、凭据代理、状态机 |
+| multi-agent-architecture-notes | [在线](https://webaifei.github.io/multi-agent-architecture-notes/) · [源码](https://github.com/webaifei/multi-agent-architecture-notes) | 三家横向对照：13 张架构图 + 可运行实现 |
+| manus-agent-research | [源码](https://github.com/webaifei/manus-agent-research) | Manus 的公开资料整理 |
