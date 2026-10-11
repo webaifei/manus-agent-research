@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "Manus 主要版本迭代时间线",
+    "locale": "zh-CN",
+    "output": ".archify/lifecycle-manus-versions-20261011-224312/manus-versions.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    { "id": "main", "label": "版本主线" },
+    { "id": "capability", "label": "同代能力" },
+    { "id": "effect", "label": "量化效果" }
+  ],
+  "states": [
+    { "id": "v1", "type": "start", "label": "2025-03 上线", "sublabel": "邀请制 · 29 工具扁平表", "tag": "v1.0", "lane": "main", "col": 0, "step": "01" },
+    { "id": "v15", "type": "active", "label": "2025-10 Manus 1.5", "sublabel": "重架构引擎 · +1.5-Lite", "tag": "v1.5", "lane": "main", "col": 1, "step": "02" },
+    { "id": "v16", "type": "active", "label": "2025-12 Manus 1.6", "sublabel": "核心架构更新 · +1.6 Max", "tag": "v1.6", "lane": "main", "col": 2, "step": "03" },
+    { "id": "v20", "type": "success", "label": "2026-09 Manus 2.0", "sublabel": "Cascade harness · Studio", "tag": "v2.0", "lane": "main", "col": 3, "step": "04" },
+
+    { "id": "cap1", "type": "neutral", "label": "Wide Research", "sublabel": "同构子 agent 并行", "lane": "capability", "col": 0 },
+    { "id": "cap15", "type": "neutral", "label": "三层动作空间", "sublabel": "沙箱 CLI · planner as tool", "lane": "capability", "col": 1 },
+    { "id": "cap16", "type": "neutral", "label": "Max 架构", "sublabel": "子 agent 全量跑 Max", "lane": "capability", "col": 2 },
+    { "id": "cap20", "type": "neutral", "label": "Cascade", "sublabel": "按需引入专用能力", "lane": "capability", "col": 3 },
+
+    { "id": "eff1", "type": "external", "label": "KV cache 硬约束", "sublabel": "I/O 100:1 · 缓存价差 10×", "lane": "effect", "col": 0 },
+    { "id": "eff15", "type": "active", "label": "15min → <4min", "sublabel": "质量 +15% · 满意度 +6%", "lane": "effect", "col": 1 },
+    { "id": "eff16", "type": "neutral", "label": "双盲满意度 +19.2%", "sublabel": "未公开 token / 时间 / 成本", "lane": "effect", "col": 2 },
+    { "id": "eff20", "type": "success", "label": "token −23.2%", "sublabel": "时间 −28.2% · 成本 −32%", "lane": "effect", "col": 3 }
+  ],
+  "transitions": [
+    { "from": "v1", "to": "v15", "label": "上下文工程公开" },
+    { "from": "v15", "to": "v16", "label": "1 个月后换引擎" },
+    { "from": "v16", "to": "v20", "label": "收购→被禁→独立", "variant": "emphasis" },
+    { "from": "v1", "to": "cap1", "variant": "dashed" },
+    { "from": "v15", "to": "cap15", "variant": "dashed" },
+    { "from": "v16", "to": "cap16", "variant": "dashed" },
+    { "from": "v20", "to": "cap20", "variant": "dashed" },
+    { "from": "cap1", "to": "eff1", "variant": "dashed" },
+    { "from": "cap15", "to": "eff15", "variant": "dashed" },
+    { "from": "cap16", "to": "eff16", "variant": "dashed" },
+    { "from": "cap20", "to": "eff20", "variant": "dashed" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "有明确量化口径的三代", "items": [
+      "1.5：任务完成 15min → <4min，质量 +15%、满意度 +6%",
+      "1.6：双盲测试满意度 +19.2%，但未公布 token / 时间 / 成本",
+      "2.0 / Cascade：token −23.2%、时间 −28.2%、成本 −32%"
+    ] },
+    { "dot": "amber", "title": "贯穿各代的成本杠杆", "items": [
+      "主指标是 KV-cache 命中率：输入输出比约 100:1，缓存与未缓存单价差 10 倍",
+      "AWS 口径（2025-12）：microVM 启动 125ms、单沙箱 5MiB、计算成本 −68%",
+      "这些是基础设施数字，与版本级的 token / 时间降幅不是同一口径"
+    ] },
+    { "dot": "rose", "title": "引用注意", "items": [
+      "版本级降幅全部为官方自报；Cascade 无任何独立验证",
+      "1.5 的 15 分钟基线是 2025-04 的旧引擎，不是 1.5 前一版",
+      "1.6 与 2.0 之间隔了 Meta 收购、NDRC 禁止、恢复独立三件事"
+    ] }
+  ]
+}

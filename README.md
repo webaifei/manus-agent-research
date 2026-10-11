@@ -7,6 +7,8 @@
 | 文件 | 说明 |
 | --- | --- |
 | [**Manus 架构实践总结.md**](docs/Manus%20架构实践总结.md) | ⭐ 总结：现状架构、十二条与常规做法相反的取舍、迭代时间线、安全代价、可信度分级 |
+| [**Manus 迭代时间线 · 产品与技术.md**](<docs/Manus 迭代时间线 · 产品与技术.md>) | ⭐ 两条时间线（产品/商业 · 技术架构）+ 逐阶段改进点与效果指标 + 冲突与未核实项 |
+| [版本迭代时间线（图）](docs/diagrams/manus-versions.html) · [PNG](docs/diagrams/manus-versions.png) | 四个版本 × 三条泳道（版本主线 / 同代能力 / 量化效果）：上线 → 1.5 → 1.6 → 2.0 |
 | [补充材料笔记.md](docs/补充材料笔记.md) | 第二批四篇的阅读笔记（极客公园对谈 / E2B / **AWS 新闻稿** / philschmid），含**交叉印证与冲突表** |
 | [Manus Agent 架构 · 完整参考资料清单.md](docs/Manus%20Agent%20架构%20·%20完整参考资料清单.md) | 82 条链接，按 **A**（可当事实）/ **B**（可信非官方）/ **C**（第三方观点）/ **D**（避开）分级；末尾有「拿不到的」和「先读这五份」 |
 | [Context Engineering for AI Agents with LangChain and Manus（中英文对照）.md](docs/Context%20Engineering%20for%20AI%20Agents%20with%20LangChain%20and%20Manus（中英文对照）.md) | LangChain × Manus webinar 录音转写（约 1 小时，主讲季逸超），中英对照 |
@@ -40,6 +42,8 @@
 ├── README.md
 ├── docs/
 │   ├── Manus 架构实践总结.md                                        # 总结
+│   ├── Manus 迭代时间线 · 产品与技术.md                              # 两条时间线 + 逐阶段改进
+│   ├── 补充材料笔记.md                                              # 第二批四篇 + 冲突表
 │   ├── Manus Agent 架构 · 完整参考资料清单.md                        # 82 条链接 + 分级
 │   ├── Context Engineering for AI Agents with LangChain and Manus（中英文对照）.md
 │   ├── manus-context-engineering.md                                # 官博全文整理
